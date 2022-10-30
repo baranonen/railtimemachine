@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rail Time Machine</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body onload="updateMap()">
+    <div id="map" class="map"></div>
+    <div class="control">
+        <div class="vertical">
+            <h1>RailTimeMachine</h1>
+            <p>A visual history of Istanbul's railway systems</p>
+        </div>
+        <div class="vertical">
+            <h2 id="date" class="date"></h2>
+            <div class="horizontal">
+                <a id="backbutton" onclick="back()"><img style="transform: rotate(180deg);" src="arrow.svg" alt=""></a>
+                <a id="forwardbutton" onclick="forward()"><img src="arrow.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
